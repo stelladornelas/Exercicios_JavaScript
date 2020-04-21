@@ -1,0 +1,50 @@
+<!-- Tendo como dados de entrada a altura e o sexo de uma pessoa (“M” masculino e “F”
+feminino), construa um programa em Javascript que calcule seu peso ideal, utilizando as
+seguintes fórmulas:
+- para homens: (72.7*h)-58
+- para mulheres: (62.1*h)-44.7 -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercicio 3</title>
+	<meta charset="utf-8">
+	
+<script>
+/*
+Solicitar que o cliente informe o seu sexo e armazenar na variável sexo.
+*/
+sexo = prompt("Informe o seu sexo (M=Masculino F=Feminino","");
+/*
+Solicitar que o cliente informe sua altura e armazenar na variável altura.
+*/
+altura = parseFloat (prompt("Informe sua altura",""));
+/*
+Se o sexo for masculino execute o bloco abaixo
+*/
+if ( sexo == "M" )
+{
+peso_ideal = (72.7 * altura ) - 58;
+alert ("Seu peso ideal é: " + peso_ideal.toFixed(2) + " Kilos");
+}
+/*
+Se o sexo for feminino execute o bloco abaixo
+*/
+if ( sexo == "F" )
+{
+peso_ideal = (62.1 * altura ) - 44.7;
+alert ("Seu peso ideal é: " + peso_ideal.toFixed(2) + " Kilos");
+24
+}
+/*
+Fecha o script
+*/
+</script>
+	
+</head>
+<body>
+
+</body>
+</html>
+
