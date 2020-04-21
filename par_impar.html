@@ -1,0 +1,42 @@
+<!-- Faça um programa em Javascript que leia um nº inteiro e mostre uma mensagem indicando
+se este número é par ou ímpar, e se é par ou ímpar-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>For</title>
+	<meta charset="utf-8">
+	<script>
+
+/*
+Abrir na tela uma janela pedindo ao usuário que um número inteiro qualquer e armazenar
+na variável n.
+*/
+var n = parseInt (prompt("Digite um número qualquer",""));
+/*
+Identificar se o número digitado é par ou impar vamos usar o seguinte raciocínio: se o resto
+da divisão do número por 2 for igual a 0 o número será par. Caso contrário será impar.
+*/
+if ( ( n % 2 ) == 0 )
+/*
+Se o teste de condição for atendido o número será par. Execute o bloco abaixo.
+*/
+{
+alert("Número digitado= " + n + " e ele é PAR");
+}
+/*
+
+Se a condição não foi atendida então ele é um número impar execute o bloco abaixo.
+*/
+else
+{alert ("O número digitado foi: " + n + " e ele é IMPAR");}
+/*
+Fecha o script
+*/
+</script>
+</head>
+<body>
+
+</body>
+</html>
+
