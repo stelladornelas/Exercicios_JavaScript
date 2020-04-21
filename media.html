@@ -1,0 +1,49 @@
+    <!-- Calcule a média aritmética das 5 notas de um aluno e mostre, além do valor da média, uma
+mensagem de "Aprovado", caso a média seja igual ou superior a 7, ou a mensagem
+"reprovado", caso contrário.   -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercicio 01</title>
+	<meta charset="utf-8">
+	<script>
+/*
+Abrir na tela uma janela pedindo ao usuário que informe o valor 03 notas (uma a uma) e
+armazenar as notas nas variáveis a, b, c
+*/
+nota_a = parseInt (prompt("Digite a primeira nota",""));
+nota_b = parseInt (prompt("Digite a segunda nota",""));
+nota_c = parseInt (prompt("Digite a terceira nota",""));
+
+/*
+Calcular a média aritmética das notas e armazenar na variável media.
+*/
+media = parseFloat(( nota_a + nota_b + nota_c) / 3).toFixed(1);
+/*
+Se a média aritmética das notas for maior ou igual a 6 imprima na tela a mensagem
+*/
+
+
+if ( media >= 7 )
+{
+alert ("Aprovado com média " + media);
+}
+/*
+Se não imprima na tela a mensagem
+*/
+else
+{
+alert ("Reprovado com média " + media);
+}
+/*
+Fechar script
+*/
+</script>
+</head>
+<body>
+
+</body>
+</html>
+
